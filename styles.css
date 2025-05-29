@@ -1,0 +1,193 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #181FB8;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header h2 {
+            margin-top: 5px;
+            font-size: 24px;
+        }
+        section {
+            padding: 30px;
+        }
+        h3 {
+            font-size: 22px;
+            border-bottom: 2px solid #4F54C4;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        a {
+            color: #4F54C4;
+            text-decoration: none;
+        }
+        .contact-info, .skills, .experience, .education, .languages {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .skills ul, .languages ul {
+            padding-left: 20px;
+        }
+        .contact-info p, .skills p, .experience p, .education p {
+            margin: 5px 0;
+        }
+        .footer {
+            background-color: #181FB8;
+            color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        ul {
+            list-style-position: inside;    
+            text-align: center;
+        }
+/* Селектор класу */
+.skills ul {
+    background-color: #2c2c2c;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Селектор ID */
+#my-photo {
+    border: 2px solid #4F54C4;
+}
+
+/* Селектор атрибуту */
+a[href^="mailto"] {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Псевдоклас */
+a:hover {
+    text-decoration: underline;
+    color: #FFA500;
+}
+.skills-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-content > div {
+    flex: 1;
+    min-width: 250px;
+}
+.experience-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+.job-block {
+    flex: 1;
+    min-width: 250px;
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+}
+/* Education and languages simple layout */
+.education-content,
+.languages-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education-block,
+.language-block {
+    flex: 1;
+    min-width: 250px;
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #444;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  color: white;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Денна тема за замовчуванням */
+body.light-theme {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+body.light-theme .section {
+  background-color: #ffffff;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-theme .section {
+  background-color: #1e1e1e;
+}
+
+/* Стиль перемикача */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+/* Фіксуємо колір тексту та фон для блоків skills - languages */
+.skill-block, .job-block, .education-content, .languages-content {
+  background-color: #2c2c2c !important;
+  color: #ffffff !important;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
